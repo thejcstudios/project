@@ -59,12 +59,14 @@ function CorporateVideo() {
         <div>No Videos to Display</div>
       )}
       <Modal show={modal} close={Toggle} title="Videos">
-        <iframe
-          className="responsive-iframe"
-          src={location}
-          allow="autoplay; fullscreen;"
-          title="cards"
-        ></iframe>
+        <div class="video-container">
+          <iframe
+            className="responsive-iframe"
+            src={location}
+            allow="autoplay; fullscreen;"
+            title="cards"
+          ></iframe>
+        </div>
       </Modal>
     </div>
   );
