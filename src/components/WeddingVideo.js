@@ -8,7 +8,7 @@ function WeddingVideo() {
   const [modal, setModal] = useState(false);
   const [location, setlocation] = useState(false);
 
-  const BASE_URL = "https://jcstudios-api.onrender.com";
+  const BASE_URL = "https://jcstudios-api.onrender.com/";
 
   const Toggle = (id) => {
     setlocation(id);

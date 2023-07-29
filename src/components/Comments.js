@@ -4,7 +4,7 @@ import axios from "../api/axios";
 import Modal from "./modal/Modal";
 
 function Comments() {
-  const BASE_URL = "https://jcstudios-api.onrender.com";
+  const BASE_URL = "https://jcstudios-api.onrender.com/";
   const [feed, setFeed] = useState();
   const [modal, setModal] = useState(false);
   const [file, setVideoFile] = useState(false);

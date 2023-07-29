@@ -5,7 +5,7 @@ import axios from "../api/axios";
 
 function PhotoGallery() {
   const [photos, setPhotos] = useState();
-  const BASE_URL = "https://jcstudios-api.onrender.com";
+  const BASE_URL = "https://jcstudios-api.onrender.com/";
   const { ref: myRef, inView: myElementIsVisible } = useInView();
   const { ref: galleryRef, inView: myGalleryIsVisible } = useInView();
 
