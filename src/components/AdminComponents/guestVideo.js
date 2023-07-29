@@ -3,11 +3,9 @@ import "./css/VideoGallery.css";
 import useAxiosPrivate from "../../hooks/userAxiosPrivate";
 import Modal from "../modal/Modal";
 import { Link } from "react-router-dom";
-import ReactPlayer from "react-player";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const VideoCollection = () => {
-  const BASE_URL = "http://localhost:5000/";
   const [videos, setVideos] = useState();
   const [videoFile, setVideoFile] = useState();
   const axiosPrivate = useAxiosPrivate();
@@ -241,7 +239,12 @@ const VideoCollection = () => {
         </div>
       </div>
       <Modal show={modal} close={Toggle} title="Videos">
-        <ReactPlayer url={BASE_URL + videoFile} controls={true}></ReactPlayer>
+        <iframe
+          className="responsive-iframe"
+          src={videoFile}
+          allow="autoplay; fullscreen;"
+          title="cards"
+        ></iframe>
       </Modal>
       <Modal show={modalUpdate} close={Update} title="Update">
         <p>{errMsg}</p>
@@ -286,7 +289,12 @@ const VideoCollection = () => {
         </div>
       </Modal>
       <Modal show={modalIntro} close={ToggleIntro} title="Videos">
-        <ReactPlayer url={BASE_URL + videoFile} controls={true}></ReactPlayer>
+        <iframe
+          className="responsive-iframe"
+          src={videoFile}
+          allow="autoplay; fullscreen;"
+          title="cards"
+        ></iframe>
       </Modal>
     </>
   );

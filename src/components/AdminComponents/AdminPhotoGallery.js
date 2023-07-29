@@ -5,7 +5,7 @@ import Modal from "../modal/Modal";
 import { Link } from "react-router-dom";
 
 const ImageGallery = () => {
-  const BASE_URL = "http://localhost:5000/";
+  const BASE_URL = "https://jcstudios-api.onrender.com";
   const [photos, setPhotos] = useState();
   const [photoFile, setphotoFile] = useState();
   const axiosPrivate = useAxiosPrivate();

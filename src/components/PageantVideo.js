@@ -2,14 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./GuestPhoto.scss";
 import axios from "../api/axios";
 import Modal from "./modal/Modal";
-import ReactPlayer from "react-player";
 
 function PageantVideo() {
   const [image, setImage] = useState();
   const [modal, setModal] = useState(false);
   const [location, setlocation] = useState(false);
 
-  const BASE_URL = "http://localhost:5000/";
+  const BASE_URL = "https://jcstudios-api.onrender.com";
 
   const Toggle = (id) => {
     setlocation(id);
@@ -60,7 +59,12 @@ function PageantVideo() {
         <div>No Videos to Display</div>
       )}
       <Modal show={modal} close={Toggle} title="Videos">
-        <ReactPlayer url={BASE_URL + location} controls={true}></ReactPlayer>
+        <iframe
+          className="responsive-iframe"
+          src={location}
+          allow="autoplay; fullscreen;"
+          title="cards"
+        ></iframe>
       </Modal>
     </div>
   );
