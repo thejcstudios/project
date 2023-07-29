@@ -238,7 +238,7 @@ const ImageGallery = () => {
           id="raise"
           onClick={() => handleDeleteFeed(userId)}
         >
-          delete
+          delete {userId}
         </button>
       </Modal>
       <Modal show={modalUploadFeed} close={UploadFeed} title="Update Feedback">
