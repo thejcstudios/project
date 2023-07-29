@@ -1,0 +1,129 @@
+.aboutus__wrapper {
+  background-image:url('../../public/images/background.jpeg');  
+  background-size: 100%;
+  height: 50vh;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+
+
+}
+.about__info{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 50vw;
+  margin: 3%;
+
+}
+.aboutus__wrapper h2 {
+  color: white;
+  width: auto;
+}
+
+.aboutus__wrapper p{
+  color: white;
+  width: auto;
+}
+
+
+.about__img{
+  
+  min-height: 100%;
+
+}
+
+.about__img {
+  position: relative;
+  opacity: 0.70;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.skills {
+  margin: 0 0 30px 0;
+  padding: 0;
+  width: calc(100% - 50px);
+
+}
+
+.skills1 {
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid #98AFC7;
+  background-color: #98AFC7;
+  width: 90%;
+  color: #fff;
+  margin: 10px 0;
+  transition: width 300ms ease-in-out;
+}
+.skills2 {
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid #98AFC7;
+  background-color: #98AFC7;
+  width: 96%;
+  color: #fff;
+  margin: 10px 0;
+  transition: width 300ms ease-in-out;
+}
+.skills3 {
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid #98AFC7;
+  background-color: #98AFC7;
+  width: 97%;
+  color: #fff;
+  margin: 10px 0;
+  transition: width 300ms ease-in-out;
+}
+.skills4 {
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid #98AFC7;
+  background-color: #98AFC7;
+  width: 95%;
+  color: #fff;
+  margin: 10px 0;
+  transition: width 300ms ease-in-out;
+}
+.skills span {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  width: 30px;
+  top: 4px;
+  text-align: right;
+  font-weight: normal;
+  color: #fff;
+  font-size: 11px;
+}
+
+
+@media screen and (max-width: 960px) {
+
+
+  .aboutus__wrapper {
+    height: auto;
+    background-size: 300%;
+  
+  }
+
+}

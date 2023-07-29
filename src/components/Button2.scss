@@ -1,0 +1,55 @@
+.raise {
+  width: 100%;
+}
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+$colors: (
+  raise: #04aa6d,
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: blue;
+  }
+}
+
+// Basic button styles
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1px !important;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+#uploadfeed {
+  width: 30%;
+  margin: 3%;
+}

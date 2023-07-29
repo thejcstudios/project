@@ -1,0 +1,58 @@
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+  margin: 10%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  opacity: 0;
+}
+
+.our__gallery {
+  text-align: center;
+  font-family: "Courier New";
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.gallery__image:hover {
+  filter: grayscale(0);
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+
+.gallery__image {
+  filter: grayscale(1);
+}
+
+.gallery__caption {
+  opacity: 1;
+}
+
+.gallery__image {
+  position: relative;
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+
+.gallery__caption {
+  opacity: 0;
+}

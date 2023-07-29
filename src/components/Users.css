@@ -1,0 +1,126 @@
+.user__wrapper {
+  width: auto;
+  height: auto;
+  margin: 2%;
+}
+
+.usernav__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 70vw;
+  height: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 15%;
+  background-color: #fbfbf9;
+}
+
+.usernav__wrapper {
+  width: 60vw;
+  height: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.usernav__wrapper ul {
+  padding: 0px;
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  overflow: hidden;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  .usernav__container {
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  #customers td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+	Label the data
+	*/
+  td:nth-of-type(1):before {
+    content: "Name";
+  }
+  td:nth-of-type(2):before {
+    content: "Id";
+  }
+  td:nth-of-type(3):before {
+    content: "Update";
+  }
+  td:nth-of-type(4):before {
+    content: "Delete";
+  }
+}
